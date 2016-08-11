@@ -54,8 +54,8 @@ $('#addTopic').on('click', function(){
 
 function displayTopicInfo(){
 
-    var person = $("#topic-input").val().trim();
-    console.log(person);
+    var person = $(this).attr("data-name");
+    console.log(this);
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + person + "&api_key=dc6zaTOxFJmzC&limit=10";
     console.log(queryURL);
         $.ajax({
@@ -139,7 +139,7 @@ function displayTopicInfo(){
 
 $(document).on('click', '.topic', displayTopicInfo);
 
-
+renderButtons();
 
 
 </script>
