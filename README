@@ -1,0 +1,5 @@
+#GiphyAPI
+
+Using the GIPHY API to make a dynamic web page that populates with gifs of movie stars.
+
+Call the GIPHY API with Ajax call, method GET, and use JavaScript and jQuery to change the HTML of site.
